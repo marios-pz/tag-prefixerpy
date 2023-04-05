@@ -1,0 +1,38 @@
+= Tag-prefixer.py
+
+Tag-prefixer.py is a command-line tool that adds a prefix to all files in a specified directory.
+
+== Usage
+
+To use tag-prefixer.py, run it from the command line with the following arguments:
+
+== Demo
+
+Suppose you have a directory called `images` containing the following files:
+
+[source]
+----
+floppa.png
+doge.png
+----
+And you want to add a `pet` prefix in front of them, simply do the below:
+
+[shell]
+----
+$ python prefix-my-files.py images pet 
+----
+
+When you run `ls` in `images` you will see the below 
+
+[source]
+----
+pet-floppa.png
+pet-doge.png
+----
+
+== Limitations
+
+* The script only adds the prefix to files that are not already prefixed. If you want to add a prefix to all files, including those that already have a prefix, you will need to modify the script.
+
+== License
+* Project is signed under LGPLv2 
